@@ -409,11 +409,12 @@ ul {
   flex-direction: column;
   align-items: center;
 }
-.footer-section h4 {
+.footer-section .footer-heading {
   font-size: 18px;
   color: var(--third-clr);
   font-family: SangBleu Sunrise;
   margin-bottom: 16px;
+  text-transform: capitalize;
 }
 .footer-section ul > li > a {
   margin-bottom: 24px;
@@ -437,7 +438,7 @@ ul {
   background-color: transparent;
   border-radius: 50px;
   color: #ffffff;
-  /* width: 294px; */
+  width: 293px;
 }
 .footer-form > button > img {
   border-radius: 50%;
@@ -457,6 +458,7 @@ button {
 .footer-icon {
   display: flex;
   align-items: center;
+   transition: transform 0.3s ease;
 }
 .footer-icons {
   margin-right: 20px;
@@ -468,7 +470,6 @@ button {
   width: 20px;
   height: 20px;
   object-fit: contain;
-  transition: transform 0.3s ease;
 }
 .footer-icons {
   border-radius: 50%;
@@ -476,8 +477,8 @@ button {
   padding: 13px;
   height: 100%;
 }
-.footer-icons :hover {
-  transform: scale(1.2);
+.footer-icon :hover {
+  transform: scale(1.1);
 }
 .footer-section > hr {
   color: #ffffff;
@@ -501,6 +502,9 @@ button {
   color: var(--third-clr);
   margin-left: 2px;
 }
+.footer-icon .footer-icons{
+  margin-bottom: 0;
+}
 @media screen and (max-width: 1200px) {
   /* Footer Section */
   .footer-section > div > div > div {
@@ -512,7 +516,7 @@ button {
     align-items: center;
     justify-content: center;
   }
-  .footer-section h4 {
+  .footer-section .footer-heading {
     text-align: center;
   }
   .fotter-span {
@@ -522,6 +526,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row !important;
   }
   .footer-form {
     display: flex;
@@ -787,7 +792,7 @@ button {
   .footer-logo-caption {
     max-width: 100px;
   }
-  .footer-section h4 {
+  .footer-section .footer-heading {
     font-size: 16px;
     margin-bottom: 12px;
   }
